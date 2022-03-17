@@ -1,6 +1,4 @@
 #include "Zombie.hpp"
-#include <iostream>
-#include <string>
 
 int main(){
     Zombie martin("martin");
@@ -8,5 +6,7 @@ int main(){
 
     Zombie *camille = newZombie("camille");
     (*camille).announce();
+    delete(camille);
+
     randomChump("pouic");
 }
