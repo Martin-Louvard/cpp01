@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef ZOMBIE_HPP
 # define ZOMBIE_HPP
 
@@ -7,11 +9,16 @@
 class Zombie{
 
     public:
-    //Constructors seters and geters
-    void announce( void );
 
+    Zombie(std::string name);
+    void announce( void ) const;
+    std::string get_name( void ) const;
+    
     private:
-    //Attributes
+
     std::string name;
 };
+
+    Zombie* newZombie(std::string name);
+    void randomChump( std::string name );
 #endif
