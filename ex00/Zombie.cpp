@@ -6,7 +6,9 @@ Zombie::Zombie(std::string name): name(name)
 {}
 
 Zombie::~Zombie()
-{}
+{
+    std::cout << "destructing " << this->name << std::endl;
+}
 
 void Zombie::announce( void ) const
 {
