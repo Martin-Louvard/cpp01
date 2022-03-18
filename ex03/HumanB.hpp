@@ -8,7 +8,7 @@ class HumanB{
     private:
     
     std::string name;
-    Weapon weapon;
+    Weapon* weapon;
 
     public:
     
@@ -17,7 +17,7 @@ class HumanB{
     void    attack(void);
     void    setName(std::string name);
     std::string getName(void);
-    void    setWeapon(Weapon weapon);
+    void    setWeapon(Weapon& weapon);
     Weapon  getWeapon(void);
 
 };

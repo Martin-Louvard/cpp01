@@ -9,9 +9,9 @@ void    HumanB::setName(std::string name)
     this->name = name;
 }
 
-void    HumanB::setWeapon(Weapon weapon)
+void    HumanB::setWeapon(Weapon &weapon)
 {
-    this->weapon = weapon;
+    this->weapon = &weapon;
 }
 
 std::string HumanB::getName(void)
@@ -21,10 +21,10 @@ std::string HumanB::getName(void)
 
 void    HumanB::attack(void)
 {
-    std::cout << this->getName() << " attacks with their " << this->weapon.getType() << std::endl;
+    std::cout << this->getName() << " attacks with their " << getWeapon().getType() << std::endl;
 }
 
 Weapon HumanB::getWeapon(void)
 {
-    return (this->weapon);
+    return (*this->weapon);
 }
