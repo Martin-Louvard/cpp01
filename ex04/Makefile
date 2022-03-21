@@ -53,6 +53,7 @@ ${NAME}: ${OBJS}
 clean:
 	@printf "%-15s ${_RED}${_BOLD}${NAME} binary files${_END}...\n" "Deleting"
 	@${RM} ${OBJS}
+	@${RM} *.replace
 
 fclean: clean
 	@printf "%-15s ${_RED}${_BOLD}${NAME}${_END}...\n" "Deleting"
