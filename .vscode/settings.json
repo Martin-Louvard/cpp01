@@ -46,6 +46,7 @@
         "tuple": "cpp",
         "fstream": "cpp",
         "ranges": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "cstring": "cpp"
     }
 }
